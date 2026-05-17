@@ -3,9 +3,9 @@ $ErrorActionPreference = "Stop"
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projectRoot = Resolve-Path (Join-Path $scriptDir "..")
 $buildDir = Join-Path $projectRoot "build-qt"
-$stageDir = Join-Path $scriptDir "Mabiaty_Update_v1.0.1"
-$zipPath = Join-Path $scriptDir "Mabiaty_Update_v1.0.1.zip"
-$notesPath = Join-Path $scriptDir "RELEASE_NOTES_v1.0.1.md"
+$stageDir = Join-Path $scriptDir "Mabiaty_Update_v1.0.2"
+$zipPath = Join-Path $scriptDir "Mabiaty_Update_v1.0.2.zip"
+$notesPath = Join-Path $scriptDir "RELEASE_NOTES_v1.0.2.md"
 
 if (-not (Test-Path $buildDir)) {
     throw "Build folder not found: $buildDir"
